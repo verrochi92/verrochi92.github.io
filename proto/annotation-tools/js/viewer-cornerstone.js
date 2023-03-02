@@ -35,7 +35,7 @@ window.onload = function () {
     csTools.addTool(ArrowAnnotateTool)
     csTools.setToolPassive('ArrowAnnotate', { mouseButtonMask: 1 });
 
-    cornerstone.loadImage('https://i.imgur.com/wpviULT.jpeg').then(function (image) {
+    cornerstone.loadImage('https://verrochi92.github.io/proto/annotation-tools/img/test.jpeg').then(function (image) {
         var img = image;
         img.rgba = true;
         cornerstone.displayImage(element, img)
