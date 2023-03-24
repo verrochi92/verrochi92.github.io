@@ -50,19 +50,26 @@ window.onload = function () {
             handleClickMeasure(event);
         }
     });
+    
+    // add a zoom handler to handle changes in zoom
+    viewer.addHandler('zoom', (event) => {
+        console.log("zoom event risen");
+    });
 };
 
 function handleClickMeasure(event) {
     let webPoint = event.position;
     let viewportPoint = viewer.viewport.pointFromPixel(webPoint);
     let imagePoint = viewer.viewport.viewportToImageCoordinates(viewportPoint);
-    // render square at imagePoint
-    overlay.fabricCanvas().add(new fabric.Rect({
-        left: imagePoint.x - 25,
-        top: imagePoint.y - 25,
+    let imageZoom = viewer.viewport.getZoom();
+    // render circle at imagePoint
+    overlay.fabricCanvas().add(new fabric.Circle({
+        originX: 'center',
+        originY: 'center',
+        left: imagePoint.x,
+        top: imagePoint.y,
         fill: 'red',
-        width: 50,
-        height: 50
+        radius: 50
     }));
     if (isMeasuring) {
         p2 = imagePoint;
