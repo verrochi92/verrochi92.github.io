@@ -1,6 +1,6 @@
-Follow this link to try out our prototypes:
+Try it out!
 
-https://verrochi92.github.io/index.html
+https://verrochi92.github.io/axolotl/
 
 This project is an extension of work done by Allen Dai in 2022:
 
