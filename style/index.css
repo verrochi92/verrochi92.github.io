@@ -17,3 +17,12 @@ body {
     margin-top: 1%;
     text-align: center;
 }
+
+p {
+    width: 50%;
+    margin: auto;
+}
+
+#projects {
+    margin-top: 3%;
+}
