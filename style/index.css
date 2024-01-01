@@ -4,22 +4,21 @@
     CSS styling for the index page.
 
     By Nicholas Verrochi
-    For CS410 - The Axolotl Project
 */
 
 body {
-    background-color: darkgrey;
+    background-color: slategray;
     font-family: 'Courier New';
 }
 
 .centered {
     margin: auto;
     margin-top: 1%;
-    text-align: center;
+    text-align: left;
 }
 
-p {
-    width: 33%;
+.text {
+    width: 66%;
     margin: auto;
 }
 
